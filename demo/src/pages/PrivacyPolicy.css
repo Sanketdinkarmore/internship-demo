@@ -47,7 +47,7 @@
   margin-bottom: 10px;
 }
 .privacy-card:hover{
-  transform: translateY(-05px);
+  transform: translateY(-10px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 .privacy-card h2{
