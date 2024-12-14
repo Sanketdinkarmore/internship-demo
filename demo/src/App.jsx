@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from 'react';
+import { Routes,Route,useLocation } from 'react-router-dom';
+import Footerweb from './components/Footerweb';
+ import PrivacyPolicy from './pages/PrivacyPolicy';
+ import TermsOfService from './pages/TermsOfService';
 function App() {
-  const [count, setCount] = useState(0)
+
+   //this is used to get current location object
+  const location=useLocation();
+  
+  // here you can define routes where the footer should not be displayed because the footer component  is already  added into the pages like about us home page and other so add the routes like privay policy and terms of service pages routes
+ const noFooterRoutes=['/privacy-policy','/terms-of-service'];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Routes>
+      <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+      <Route path='/terms-of-service' element={<TermsOfService/>}/>
 
-export default App
+    </Routes>
+     
+     
+    {!noFooterRoutes.includes(location.pathname) && <Footerweb/>}
+
+    </>
+  );
+
+}
+export default App;

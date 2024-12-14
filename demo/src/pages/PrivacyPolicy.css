@@ -1,0 +1,123 @@
+
+.privacy-header{
+  background-color: #0056b3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.privacy-header h1{
+  font-size: 36px;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+}
+.privacy-header p{
+  font-size: 18px;
+  margin: 10px 0 0;
+  font-family: 'Poppins';
+}
+.privacy-section{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color:#f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+}
+.privacy-card a{
+  text-decoration: none;
+  color: #0056b3 ;
+}
+.privacy-card a:hover{
+  text-decoration: underline;
+}
+
+.privacy-card{
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -12px;
+  margin-bottom: 10px;
+}
+.privacy-card:hover{
+  transform: translateY(-05px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.privacy-card h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dedede; 
+  padding-bottom: 5px;
+}
+.privacy-card p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+.privacy-card ul{
+  padding: 10px;
+}
+.privacy-card li{
+  list-style: none;
+  padding:3px;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-header h1{
+    font-size: 28px;
+  }
+  .privacy-header p{
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  .privacy-section {
+    padding: 10px;
+  }
+
+  .privacy-card {
+    padding: 15px;
+  }
+
+  .privacy-card h2 {
+    font-size: 18px;
+  }
+
+  .privacy-card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .privacy-header {
+    padding: 15px; 
+    border-radius: 3px; 
+  }
+  .privacy-header h1 {
+    font-size: 22px; 
+  }
+  .privacy-header p {
+    font-size: 14px; 
+  }
+.privacy-card {
+    padding: 10px;
+  }
+
+  .privacy-card h2 {
+    font-size: 16px;
+  }
+
+  .privacy-card p {
+    font-size: 13px;
+  }
+}
