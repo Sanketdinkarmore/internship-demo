@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes,Route,useLocation } from 'react-router-dom';
-import Footerweb from './components/Footerweb';
- import PrivacyPolicy from './pages/PrivacyPolicy';
- import TermsOfService from './pages/TermsOfService';
+import Footerweb from './Sanket_work/components/Footerweb';
+ import PrivacyPolicy from './Sanket_work/pages/PrivacyPolicy';
+ import TermsOfService from './Sanket_work/pages/TermsOfService';
 function App() {
 
    //this is used to get current location object
