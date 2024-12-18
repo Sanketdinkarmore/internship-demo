@@ -1,0 +1,22 @@
+/* Container for the image */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Hero image styling */
+  .hero-image {
+    max-width: 600px;
+    height: auto;
+    border-radius: 125px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    position: relative;
+    left: 800px; 
+    bottom: 300px;
+  }
+  
+
+  
